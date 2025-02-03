@@ -11,45 +11,57 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+/**
+* Template Name: Append
+* Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
+* Updated: Aug 07 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# Font & Color Variables
+# Help: https://bootstrapmade.com/color-system/
+--------------------------------------------------------------*/
+/* Fonts */
 :root {
-  --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Montserrat",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Creepster", cursive, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Creepster", cursive, sans-serif;
+  --nav-font: "Creepster", cursive, sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+/* Global Colors - Dark Vibe */
 :root {
-  --background-color: #1e1e1e; /* Dark background color for the entire website, including individual sections */
-  --default-color: #c8c8c8; /* Light grey color for the majority of the text content across the entire website */
-  --heading-color: #f2f2f2; /* Lighter color for headings, subheadings, and titles throughout the website */
-  --accent-color: #e84545; /* Bright accent color for buttons, links, and other elements that need to stand out */
-  --surface-color: #2d2d2d; /* Darker surface color for boxed elements within sections */
-  --contrast-color: #f2f2f2; /* Light contrast color for text against dark backgrounds */
+  --background-color: #1a1a1a; /* Dark background for the entire website */
+  --default-color: #e0e0e0; /* Light gray for default text */
+  --heading-color: #ffffff; /* White for headings */
+  --accent-color: #ff4444; /* Blood red for accents */
+  --surface-color: #2a2a2a; /* Dark surface for cards and boxes */
+  --contrast-color: #ffffff; /* White for contrast text */
 }
 
-/* Nav Menu Colors - Adjusted for dark theme */
+/* Nav Menu Colors - Dark Vibe */
 :root {
-  --nav-color: #c8c8c8;  /* Light grey color for the main navmenu links */
-  --nav-hover-color: #e84545; /* Bright red color applied to main navmenu links when hovered over or active */
-  --nav-mobile-background-color: #1e1e1e; /* Dark background color for mobile navigation menu */
-  --nav-dropdown-background-color: #2d2d2d; /* Dark background color for dropdown items */
-  --nav-dropdown-color: #c8c8c8; /* Light grey color for dropdown navigation links */
-  --nav-dropdown-hover-color: #e84545; /* Bright red color applied to dropdown navigation links when hovered over */
+  --nav-color: #b3b3b3; /* Light gray for nav links */
+  --nav-hover-color: #ff4444; /* Blood red for hover/active nav links */
+  --nav-mobile-background-color: #2a2a2a; /* Dark background for mobile nav */
+  --nav-dropdown-background-color: #2a2a2a; /* Dark background for dropdowns */
+  --nav-dropdown-color: #b3b3b3; /* Light gray for dropdown links */
+  --nav-dropdown-hover-color: #ff4444; /* Blood red for hover dropdown links */
 }
 
-/* Color Presets - Adjusted for dark theme */
-
+/* Color Presets - Dark Vibe */
 .light-background {
-  --background-color: #2d2d2d;
-  --surface-color: #3a3a3a;
+  --background-color: #2a2a2a;
+  --surface-color: #1a1a1a;
 }
 
 .dark-background {
-  --background-color: #1e1e1e;
-  --default-color: #c8c8c8;
-  --heading-color: #f2f2f2;
-  --surface-color: #2d2d2d;
-  --contrast-color: #f2f2f2;
+  --background-color: #000000;
+  --default-color: #e0e0e0;
+  --heading-color: #ffffff;
+  --surface-color: #1a1a1a;
+  --contrast-color: #ffffff;
 }
 
 /* Smooth scroll */
@@ -213,21 +225,20 @@ h6 {
 /* Index Page Header
 ------------------------------*/
 .index-page .header {
-  --background-color: rgba(30, 30, 30, 0);
-  --heading-color: #f2f2f2;
-  --nav-color: rgba(200, 200, 200, 0.5);
-  --nav-hover-color: #f2f2f2;
+  --background-color: rgba(26, 26, 26, 0);
+  --heading-color: #ffffff;
+  --nav-color: rgba(255, 255, 255, 0.5);
+  --nav-hover-color: #ffffff;
 }
 
 /* Index Page Header on Scroll
 ------------------------------*/
 .index-page.scrolled .header {
-  --background-color: #1e1e1e;
-  --heading-color: #f2f2f2;
-  --nav-color: #c8c8c8;
-  --nav-hover-color: #e84545;
+  --background-color: #1a1a1a;
+  --heading-color: #ffffff;
+  --nav-color: #b3b3b3;
+  --nav-hover-color: #ff4444;
 }
-
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -250,106 +261,93 @@ h6 {
     position: relative;
   }
 
-  :root {
-  --nav-font: 'Creepster', cursive; /* Update font to Creepster */
-  --heading-font: 'Creepster', cursive; /* Optional: change heading font */
-  --background-color: #121212; /* Dark background color */
-  --nav-color: #ffffff; /* Light text color for navigation */
-  --nav-hover-color: #e74c3c; /* Hover color (red, for contrast) */
-  --nav-dropdown-background-color: #1a1a1a; /* Dark dropdown background */
-  --nav-dropdown-color: #ffffff; /* Light color for dropdown text */
-  --nav-dropdown-hover-color: #e74c3c; /* Hover color for dropdown */
-  --accent-color: #ff6347; /* Tomato red for accent color */
-  --contrast-color: #ffffff; /* High contrast color for icons and text */
-  --default-color: #cccccc; /* Default light gray color */
-}
+  .navmenu a,
+  .navmenu a:focus {
+    color: var(--nav-color);
+    padding: 18px 15px;
+    font-size: 16px;
+    font-family: var(--nav-font);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
 
-.navmenu a,
-.navmenu a:focus {
-  color: var(--nav-color);
-  padding: 18px 15px;
-  font-size: 16px;
-  font-family: var(--nav-font);
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  white-space: nowrap;
-  transition: 0.3s;
-}
+  .navmenu a i,
+  .navmenu a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+    transition: 0.3s;
+  }
 
-.navmenu a i,
-.navmenu a:focus i {
-  font-size: 12px;
-  line-height: 0;
-  margin-left: 5px;
-  transition: 0.3s;
-}
+  .navmenu li:last-child a {
+    padding-right: 0;
+  }
 
-.navmenu li:last-child a {
-  padding-right: 0;
-}
+  .navmenu li:hover>a,
+  .navmenu .active,
+  .navmenu .active:focus {
+    color: var(--nav-hover-color);
+  }
 
-.navmenu li:hover>a,
-.navmenu .active,
-.navmenu .active:focus {
-  color: var(--nav-hover-color);
-}
+  .navmenu .dropdown ul {
+    margin: 0;
+    padding: 10px 0;
+    background: var(--nav-dropdown-background-color);
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    left: 14px;
+    top: 130%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 4px;
+    z-index: 99;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  }
 
-.navmenu .dropdown ul {
-  margin: 0;
-  padding: 10px 0;
-  background: var(--nav-dropdown-background-color);
-  display: block;
-  position: absolute;
-  visibility: hidden;
-  left: 14px;
-  top: 130%;
-  opacity: 0;
-  transition: 0.3s;
-  border-radius: 4px;
-  z-index: 99;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-}
+  .navmenu .dropdown ul li {
+    min-width: 200px;
+  }
 
-.navmenu .dropdown ul li {
-  min-width: 200px;
-}
+  .navmenu .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 15px;
+    text-transform: none;
+    color: var(--nav-dropdown-color);
+  }
 
-.navmenu .dropdown ul a {
-  padding: 10px 20px;
-  font-size: 15px;
-  text-transform: none;
-  color: var(--nav-dropdown-color);
-}
+  .navmenu .dropdown ul a i {
+    font-size: 12px;
+  }
 
-.navmenu .dropdown ul a i {
-  font-size: 12px;
-}
+  .navmenu .dropdown ul a:hover,
+  .navmenu .dropdown ul .active:hover,
+  .navmenu .dropdown ul li:hover>a {
+    color: var(--nav-dropdown-hover-color);
+  }
 
-.navmenu .dropdown ul a:hover,
-.navmenu .dropdown ul .active:hover,
-.navmenu .dropdown ul li:hover>a {
-  color: var(--nav-dropdown-hover-color);
-}
+  .navmenu .dropdown:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
 
-.navmenu .dropdown:hover>ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
-}
+  .navmenu .dropdown .dropdown ul {
+    top: 0;
+    left: -90%;
+    visibility: hidden;
+  }
 
-.navmenu .dropdown .dropdown ul {
-  top: 0;
-  left: -90%;
-  visibility: hidden;
-}
-
-.navmenu .dropdown .dropdown:hover>ul {
-  opacity: 1;
-  top: 0;
-  left: -100%;
-  visibility: visible;
+  .navmenu .dropdown .dropdown:hover>ul {
+    opacity: 1;
+    top: 0;
+    left: -100%;
+    visibility: visible;
+  }
 }
 
 /* Navmenu - Mobile */
@@ -649,6 +647,7 @@ h6 {
   transition: all 0.4s;
 }
 
+
 .scroll-top i {
   font-size: 24px;
   color: var(--contrast-color);
@@ -664,7 +663,6 @@ h6 {
   visibility: visible;
   opacity: 1;
 }
-
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
